@@ -114,16 +114,18 @@ y hacer lo mismo en el html*/
     margin-top: -0.5em;
     line-height: 1.8rem;
 }
-/*hay problemas con SUBSCRIBE, se sale del input*/
+/*hay problemas con SUBSCRIBE, se sale del input si se encoge la pantalla
+y se descoloca al ensanchar la pantalla*/
 
 .footer-inputspan {
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
 }
+/*Experimento sin éxito*/
 .footer-flex1{
-
 }
+/*Experimento sin éxito*/
 .footer-flex2{
     justify-content: right;
     align-items: right;
@@ -161,7 +163,6 @@ y hacer lo mismo en el html*/
     padding: 3% 0% 6% 4%;
     font-size: 1rem;
     margin-right: 1em;
-    width:33%
 }
 .footer-address{
     margin-top: -0.7em;
