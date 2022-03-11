@@ -41,6 +41,7 @@ section {
         width: 100%;
         height: auto;
         transform: scale(1.1);
+        transition:transform .5s;
 }
 
 .abovefooter {
@@ -59,25 +60,26 @@ section {
 }
 
 .footertext {
-    width: 55%;
+    width: 57%;
     /* margin-top: auto; */
     text-align: left;
     font-family: "Gayathri";
-    font-size: 1.1em;
+    font-size: .9em;
     color: #444;
+    font-weight: 100;
 }
 
 .linksi {
-    width: 15%;
+    width: 13%;
     /* margin: auto; */
-    font-size: 1em;
+    font-size: .8em;
     text-align: center;
 }
 
 .linksi a {
     margin: 1% 0;
     color: #222;
-    padding: 0 5%;
+    padding: 0 4%;
 }
 
 
