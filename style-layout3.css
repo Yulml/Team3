@@ -1,0 +1,205 @@
+/*DiegoTMillan*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+/*a todos los selectores le he puesto la palabra footer y un guión para que 
+no haya conflictos*/
+.footer-t1{
+    margin: 2em auto;
+    width: 80%;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-principal{
+    display: flex;
+    justify-content: center;
+}
+/* Al ensanchar la pantalla queda demasiado margen derecha en el box1*/
+/* Además al minimizar mucho se mete el contenido en la footer-Box2*/
+.footer-box1{
+    display:flex;
+    border-top: 1px solid hsl(0, 0%, 92%);
+    border-bottom: 1px solid hsl(0, 0%, 92%);
+    border-right: 1px solid hsl(0, 0%, 92%);
+    padding:3% 0% 6% 0%;
+    font-size: 1rem;
+    width:27%
+
+}
+.footer-title1{
+    width: 50%;
+    text-decoration: none;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-title2{
+    width: 50%;
+    margin-left: 8%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+/*he puesto un hover en los enlaces de la primera caja.
+si pasas por encima el ratón se eleva y hace sombre
+Si hay conflicto con el hoover, solo habría que poner footer delante a la clase
+y hacer lo mismo en el html*/
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+.footer-a1{
+    text-decoration: none;
+    color: hsl(258, 5%, 41%);
+    line-height: 1.7rem;
+}
+.footer-h3{
+    margin-bottom: 1.5em;
+}
+.footer-box2{
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid hsl(0, 0%, 92%);
+    border-bottom: 1px solid hsl(0, 0%, 92%);
+    border-right: 1px solid hsl(0, 0%, 92%);
+    padding:3% 4% 6% 4%;
+    font-size: 1rem;
+    width:33%
+}
+.footer-textsubscribe{
+    color: hsl(258, 5%, 41%);
+    margin-bottom: 1.3em;
+    margin-top: -0.5em;
+    line-height: 1.8rem;
+}
+/*hay problemas con SUBSCRIBE, se sale del input*/
+
+.footer-inputspan {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.footer-flex1{
+
+}
+.footer-flex2{
+    justify-content: right;
+    align-items: right;
+
+}
+.footer-input1{
+    padding-bottom: 0.5em;
+}
+/*le he puesto un hover al subscribe para que se agrande un poco*/
+.footer-a2{
+    text-decoration: none;
+    color:black;
+    margin-left:auto;
+}
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+.footer-box3{
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid hsl(0, 0%, 92%);
+    border-bottom: 1px solid hsl(0, 0%, 92%);
+    padding: 3% 0% 6% 4%;
+    font-size: 1rem;
+    margin-right: 1em;
+    width:33%
+}
+.footer-address{
+    margin-top: -0.7em;
+    line-height: 1.8rem;
+    color:hsl(258, 5%, 41%)
+}
+.footer-code{
+    color:hsl(337, 87%, 66%)
+}
+i{
+    color: hsl(337, 87%, 66%);
+}
+.footer-t2{
+    margin:auto;
+    width: 80%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(50%, 50%, 44%);
+    margin-top: -2em;
+}
+/*este es un elemento para que TEAM3 haga GROW al pasar por encima*/
+.footer-hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .footer-hvr-grow:hover, .footer-hvr-grow:focus, .footer-hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+
