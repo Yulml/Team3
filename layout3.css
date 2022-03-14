@@ -38,7 +38,7 @@
     float: left;
     padding: 0rem;
     margin:  1.5rem 0rem 00rem 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     border-radius: 5px;
     
   }
@@ -89,7 +89,7 @@
   }
 
   .fa-magnifying-glass {
-    margin: 0rem 2rem 0rem 2rem;;
+    margin: 0rem 1rem 0rem 0rem;;
   }
 
   .fa-bag-shopping {
