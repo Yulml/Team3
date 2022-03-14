@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Gayathri", sans-serif;
+  src: url(../fonts/gayathri/Gayathri-Thin.ttf) format(truetype);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* here header starts obviously  */
+#navigation {
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+}
+
+#navigation .list {
+  list-style-type: none;
+  padding: 0rem;
+  margin: 4rem 0rem 0rem 1rem;
+}
+
+#navigation li {
+  float: left;
+  padding: 0rem;
+  margin: 1.5rem 0rem 00rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+#navigation .active {
+  color: #f46399;
+}
+/* here you have hover effect delete if unnecesary */
+#navigation li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 20px #f46399;
+  filter: brightness(120%);
+}
+/* here you have logo */
+
+#navigation .logo {
+  padding: 4.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+#navigation .logo img {
+  width: 250px;
+}
+
+/* icons in the menu */
+#navigation .icons {
+  margin: 4rem 0rem 0rem 3rem;
+}
+#navigation .icons ul {
+  list-style-type: none;
+
+}
+#navigation .lip {
+  font-size: 12px;
+  padding: 0;
+  margin: 1.75rem 0rem 0 0.5rem;
+}
+
+#navigation .bag {
+  margin: 1.75rem 0rem 0rem 0.5rem;
+  color: #f46399;
+  font-size: 12px;
+}
+
+#navigation .fa-heart {
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+#navigation .fa-magnifying-glass {
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+#navigation .fa-bag-shopping {
+  padding: 0rem 0rem 0rem 0rem;
+}
