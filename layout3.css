@@ -73,15 +73,15 @@
   }
 
   .lip {
-    font-size: 15px;
+    font-size: 12px;
     padding: 0;
-    margin: 1.6rem 0rem 0 0.5rem;
+    margin: 1.75rem 0rem 0 0.5rem;
   }
 
   .bag {
-    margin: 1.6rem 0rem 0rem 0.5rem;
+    margin: 1.75rem 0rem 0rem 0.5rem;
     color: #f46399;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .fa-heart {
