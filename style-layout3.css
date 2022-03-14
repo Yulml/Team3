@@ -1,4 +1,4 @@
-/*DiegoTMillan*/
+/*Feature_DiegoTMillan*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,27 +21,32 @@ no haya conflictos*/
 }
 /* Al ensanchar la pantalla queda demasiado margen derecha en el box1*/
 /* Además al minimizar mucho se mete el contenido en la footer-Box2*/
+/*BOX1*/
 .footer-box1{
     display:flex;
     border-top: 1px solid hsl(0, 0%, 92%);
     border-bottom: 1px solid hsl(0, 0%, 92%);
     border-right: 1px solid hsl(0, 0%, 92%);
-    padding:3% 0% 6% 0%;
+    padding:4% 0% 0% 0%;
     font-size: 1rem;
-    width:27%
+    width:33%
 
 }
 .footer-title1{
-    width: 50%;
+    width: 40%;
     text-decoration: none;
     padding-right: 4%;
     display: flex;
     flex-direction: column;
 }
+.footer-h3{
+    font-size: 2.4rem;
+    font-weight: lighter;
+}
 .footer-title2{
-    width: 50%;
+    width: 40%;
     margin-left: 8%;
-    padding-right: 5%;
+    padding-right: 7%;
     display: flex;
     flex-direction: column;
 }
@@ -49,7 +54,19 @@ no haya conflictos*/
 si pasas por encima el ratón se eleva y hace sombre
 Si hay conflicto con el hoover, solo habría que poner footer delante a la clase
 y hacer lo mismo en el html*/
-.hvr-float-shadow {
+ .hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -93,18 +110,20 @@ y hacer lo mismo en el html*/
 .footer-a1{
     text-decoration: none;
     color: hsl(258, 5%, 41%);
-    line-height: 1.7rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
 }
 .footer-h3{
     margin-bottom: 1.5em;
 }
+/*BOX2*/
 .footer-box2{
     display:flex;
     flex-direction: column;
     border-top: 1px solid hsl(0, 0%, 92%);
     border-bottom: 1px solid hsl(0, 0%, 92%);
     border-right: 1px solid hsl(0, 0%, 92%);
-    padding:3% 4% 6% 4%;
+    padding:4% 4% 0% 4%;
     font-size: 1rem;
     width:33%
 }
@@ -112,10 +131,11 @@ y hacer lo mismo en el html*/
     color: hsl(258, 5%, 41%);
     margin-bottom: 1.3em;
     margin-top: -0.5em;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
 }
 /*hay problemas con SUBSCRIBE, se sale del input si se encoge la pantalla
-y se descoloca al ensanchar la pantalla*/
+y se descoloca al ensanchar la pantalla, no sé si la solución es óptima*/
 
 .footer-inputspan {
     border-bottom: 2px solid black;
@@ -123,16 +143,18 @@ y se descoloca al ensanchar la pantalla*/
     flex-direction: row;
 }
 /*Experimento sin éxito*/
-.footer-flex1{
-}
+/* .footer-flex1{
+    width:50%;
+} */
 /*Experimento sin éxito*/
 .footer-flex2{
     justify-content: right;
     align-items: right;
-
+    margin-left: auto;
 }
 .footer-input1{
     padding-bottom: 0.5em;
+    font-size: 1.2rem;
 }
 /*le he puesto un hover al subscribe para que se agrande un poco*/
 .footer-a2{
@@ -155,25 +177,32 @@ y se descoloca al ensanchar la pantalla*/
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   }
+/*BOX3*/
 .footer-box3{
     display:flex;
     flex-direction: column;
     border-top: 1px solid hsl(0, 0%, 92%);
     border-bottom: 1px solid hsl(0, 0%, 92%);
-    padding: 3% 0% 6% 4%;
+    padding: 4% 0% 4% 4%;
     font-size: 1rem;
     margin-right: 1em;
+    width: 33%;
+}
+.footer-box3 h3{
+    margin-left: 1.1em;
 }
 .footer-address{
     margin-top: -0.7em;
-    line-height: 1.8rem;
-    color:hsl(258, 5%, 41%)
+    line-height: 2.8rem;
+    color:hsl(258, 5%, 41%);
+    font-size: 1.4rem;
+    margin-left: 2.1em;
 }
 .footer-code{
-    color:hsl(337, 87%, 66%)
+    color:#f46399
 }
 i{
-    color: hsl(337, 87%, 66%);
+    color: #f46399;
 }
 .footer-t2{
     margin:auto;
@@ -183,6 +212,9 @@ i{
     justify-content: center;
     color: rgb(50%, 50%, 44%);
     margin-top: -2em;
+}
+.copyright{
+    font-size: 1.5rem;
 }
 /*este es un elemento para que TEAM3 haga GROW al pasar por encima*/
 .footer-hvr-grow {
