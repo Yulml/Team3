@@ -49,12 +49,13 @@
 
 h3{
     font-size: 1.1vw;
-    font-weight: bold;
     padding-top: 1em;
 }
 .price{
-    font-size:1vw;
-    padding-top: 1em;
+    font-size:  1vw;
+    font-style: bold;
+    padding-top: .8em;
+
 }
 
 .barra{
@@ -102,10 +103,11 @@ margin: auto;
 a{
     display: flex;
     justify-content: center;
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: black;
     margin-bottom: 1em;
     margin-top: 1em;
+    text-underline-offset:10px;
     
 }
 
@@ -116,7 +118,8 @@ a{
     left:8px;
     color:white;
     background-color: black;
-    font-size:1vw;
+    font-size:  .8vw;
+    font-style: bold;
 }
 
 .texto-encima2{
@@ -126,7 +129,8 @@ a{
     left: 8px;
     color:white;
     background-color: black;
-    font-size:  1vw;
+    font-size:  .8vw;
+    font-style: bold;
 }
 .texto-encima3{
     display: flex;
@@ -135,7 +139,8 @@ a{
     left: 8px;
     color:white;
     background-color: black;
-    font-size:1vw;
+    font-size:  .8vw;
+    font-style: bold;
 }
 
 .icono-group{
@@ -148,7 +153,9 @@ a{
 }
 
 .round-icons{
-    margin: auto;
+    
+    margin-left: .3em;
+    margin-right: .3em;
     background-color: white;
     border-radius: 50%;
     padding: 6px;
@@ -156,7 +163,8 @@ a{
 }
 
 .add{
-    font-size: 1vw;
+    font-size: .8vw;
+    font-style: bold;
     color: var(--pink);
     padding-top: 1em;
 }
